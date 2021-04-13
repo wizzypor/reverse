@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 class="text"></h1>
+	<input type="" name="" class="input">
+	<button class="btn">нажать</button>
+
+	<script type="text/javascript">
+		let text = document.querySelector('.text')
+		let input = document.querySelector('.input')
+		let btn = document.querySelector('.btn')
+		let textt = 0
+		
+		btn.onclick = function(){
+			textt = input.value
+			textt = textt.split('')
+			textt = textt.reverse()
+			textt = textt.join('')
+			text.innerHTML = textt
+		}
+		
+	</script>
+</body>
+</html>
